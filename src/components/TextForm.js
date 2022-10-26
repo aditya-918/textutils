@@ -51,7 +51,7 @@ export default function TextForm(props) {
   // const handleItalic = () => {
   //   console.log("hello");
   // }
-  // Ayush Code
+  // New Code
   function changeFontStyle(e) {
     const text = document.getElementById("myBox");
     const preview_text = document.getElementById('preview_text');
@@ -74,7 +74,7 @@ export default function TextForm(props) {
 
   // const btnAction = document.querySelector('.btn-action');
   // btnAction.addEventListener('click', changeFontStyle);
- // Ayush Code
+ // New Code
   const [text, setText] = useState('');
   // text = "new text"; // Wrong way to change the state
   // setText("new text"); // Correct way to change the state
@@ -96,11 +96,11 @@ export default function TextForm(props) {
 <button id="bold" className="btn btn-primary mx-2 my-2" onClick={changeFontStyle}>Convert to Bold</button>
 <button id="underline" className="btn btn-primary mx-2 my-2" onClick={changeFontStyle}>Convert Underline</button>
 
-{/* Ayush Code */}
+{/* New Code */}
    {/* <div class="btn-action">
    <button id="italic">Convert to Italic</button>
    </div> */}
-{/* Ayush Code */}
+{/* New Code */}
 
   </div>
   <div className="container my-3" style={{color: props.mode==='dark'?'white':'#042743'}}>
