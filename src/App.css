@@ -40,3 +40,15 @@
 .blank{
   color: blue;
 }
+
+.italic{
+  font-style: italic;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.underline{
+  text-decoration: underline;
+}

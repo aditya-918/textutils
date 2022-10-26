@@ -13,7 +13,9 @@ import {
   Routes
 } from "react-router-dom";
 
-
+// Ayush Code
+// const btnA
+// Ayush Code
 
 function App() {
   const [mode, setMode] = useState('light'); //Whether dark mode is enabled or not
@@ -59,11 +61,14 @@ function App() {
     <Routes>
       {/* /users --> Component 1
           /users/home  --> Component 2 */}
-          <Route exact path="/about" element={<About/>}>
+          <Route exact path="/about" element={<About/> } mode={mode}>
         
           </Route>
 
-          <Route exact path="/" element={<TextForm showAlert={showAlert} heading = "Enter the text to analyze below" mode={mode}/>}>
+          
+          <Route exact path="/" element={<TextForm heading = "Enter the text to analyze below" mode={mode} showAlert={showAlert}/>}>
+
+         
            
            
           </Route>
