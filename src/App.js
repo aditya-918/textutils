@@ -5,13 +5,13 @@ import TextForm from './components/TextForm';
 import About from './components/About';
 import React, { useState } from 'react';
 import Alert from './components/Alert';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  Routes
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link,
+//   Routes
+// } from "react-router-dom";
 
 // Ayush Code
 // const btnA
@@ -54,29 +54,29 @@ function App() {
   <>
     {/* <Navbar title = "TextUtils" aboutText="About Textutils"/> */}
     {/* <Navbar/> */}
-    <Router>
+    {/* <Router> */}
     <Navbar title = "TextUtils" mode={mode} toggleMode = {toggleMode}/>
     <Alert alert={alert}/>
     <div className="container my-3">
-    <Routes>
+    {/* <Routes> */}
       {/* /users --> Component 1
           /users/home  --> Component 2 */}
-          <Route exact path="/about" element={<About/> } mode={mode}>
+          {/* <Route exact path="/about" element={<About/> } mode={mode}>
         
-          </Route>
+          </Route> */}
 
           
-          <Route exact path="/" element={<TextForm heading = "Enter the text to analyze below" mode={mode} showAlert={showAlert}/>}>
+          <TextForm heading = "Enter the text to analyze below" mode={mode} showAlert={showAlert}/>
 
          
            
            
-          </Route>
-    </Routes>
+          {/* </R> */}
+    {/* </Routes> */}
 
     
     </div>
-    </Router>
+    {/* </Router> */}
   </>
   );
 }
